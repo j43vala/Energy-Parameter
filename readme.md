@@ -30,10 +30,10 @@ The Energy Meter System (ENMS) is a comprehensive solution for monitoring and ma
 
 ---
 
-## Power
+## Power (w)
 
 - **Equation**: p = VI (Product of voltage and current)
-
+- **Unit**: Watts 
 ---
 
 ### Apparent Power (S)

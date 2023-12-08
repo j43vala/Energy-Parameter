@@ -245,7 +245,9 @@ Energy (in watt-hours) = power(in watts) *Time(in hours) = Voltage (in volts)* C
 - **Carbon Intensity Factor**: CO2 emission
 - **Equation**: CO2 Emission = Energy Consumption (KWh) * Carbon Intensity Factor (gCO2 / KWh)
 - Carbon Intensity Factor calculation
+
 ![Alt text](image-4.png)
+
 ![Alt text](image-5.png)
 
 ---

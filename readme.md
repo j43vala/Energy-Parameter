@@ -2,215 +2,148 @@
 
 The Energy Meter System (ENMS) is a comprehensive solution for monitoring and managing energy consumption in various applications. This README provides an overview of the key functionalities and features of the ENMS project.
 
-# PARAMETERS
+## PARAMETERS
 
-# Current(I) -
+### Current (I)
 
-- Defination - the flow of electric charge in a conductor
+- **Definition**: The flow of electric charge in a conductor
+- **Unit**: Ampere (A)
+- **Equation**: I = Voltage / Resistance
 
-- unit - Ampere (A)
+### Voltage (V)
 
-- Equation - I = Voltage  / Resistance
+- **Definition**: The electric potential difference between two points in a circuit
+- **Unit**: Volt (V)
+- **Equation**: V = I (current) * R (resistance)
 
-# Voltage(V) -
+### Resistance (R)
 
-- Defination - the electric potential difference between two points in a circuit
+- **Definition**: Opposition to the flow of electric current
+- **Unit**: Ohm
+- **Equation**: R = Voltage / I (current)
 
-- Unit - Volt (V)
+### Frequency (f)
 
-- Equation - V = I (current) * R (resistance)
+- **Definition**: The number of cycles per second of an alternative current
+- **Unit**: Hertz (Hz)
+- **Relation with Period**: f = 1 / T
 
-# Resistance(R) -
+---
 
-- Defination - Opposition to the flow of electric current.
+## Power
 
-Unit - Ohm
+- **Equation**: p = VI (Product of voltage and current)
 
-Equation - r = Voltage  / I (current)
+---
 
-# Frequency(f) -
+### Apparent Power (S)
 
-- Defination - the number of cycles per second of an alternative current.
+- **Definition**: The total power flowing
+- **Equation**: AP = Voltage * Current
+- **Unit**: Volt-Amps (VA)
 
-- unit - Hz
+---
 
-- relation with period - f = 1 / T
+### Reactive Power (Q)
 
-----------
+- **Equation 1**: Q = VI * sin(θ)
+- **Equation 2**: Q = S * sin(θ)
+- **Definition**: Non-working power in an AC circuit responsible for creating the magnetic field
 
-# power
+### Impedance (Z)
 
-p = VI
+- **Equation**: Z = Voltage / I
+- **Definition**: Overall opposition that a circuit presents to the flow of alternating current
 
-product of voltage and current
--------
+### R Phase
 
-# Apparent Power(S)
+- Represented as red color
+- Carries AC current
+- Measured in watts (W)
 
-defination - the total power flowing
+---
 
-AP = voltage * current
+### Y Phase
 
-unit - VA (volt-Amps)
+- Represented as yellow color
+- Carries AC current
+- Measured in watts (W)
+- Electrically displaced by 120 deg from the other phases
+- Creates a balancing system that provides a more constant and efficient power supply
 
---------
+---
 
-# Reactive power(Q)
+### B Phase
 
-Q = VI sin (θ)  OR  Q = S sin(θ)
+- Represented as blue color
+- Carries AC current
+- Measured in watts (W)
 
- where, θ = phase angle between voltage and current in an AC circuit.
+---
 
- it is the non-working power in an AC circuit that is responsible for creating the magnetic field.
+## Watts
 
-# Impedance (Z)
+- **Definition**: Measurement of the rate of energy transfer over a unit of time
+- **Unit**: Watts (W)
+- **Equation**: Watts = Amps x Volts
+- **Relation with Power and Energy**: Power is the rate at which energy is used or produced
 
-z = V / I
+---
 
-- the overall opposition that a circuit presents to the flow of alternating current.
+### Power and Energy Relationship
 
-# R phase
+Equation: E = P × t (where E is energy in joules, P is power in watts, and t is time in seconds)
 
-- represent as a red color
-- carried AC current
-- r phase is measured in watts(W)
+---
 
-----------------------
+### Voltage, Current, and Resistance Relationship (in electrical context)
 
-# Y phase
+Equation: P = I × V (where I is the current in amperes and V is the voltage in volts, according to Ohm's Law: V = I × R)
 
-- represent as a yellow color
-- carried AC current
-- measered in watts(W)
-- electrically displaced by 120 deg from the other phases.
-- create balancing system that provides a more constant and efficient power supply.
+---
 
----------------------------
-
-# B phase
-
-- represent as a blue color
-- carried AC current
-- measered in watts(W)
-
-# Watts
-
-**defination** - A measurment of the rate of energy transfer over a unit of time.
-
-**unit** -  
-watts is a unit of power.
-1 joule of work / second **OR** 1/746 horsepower.
-
-**equation** -
-
-Watts = Amps x Volts
-
-eg. 10 Amps x 120 Volts = 1200 Watts.
-
-**Relation** -
-
-- ***Power and Energy***:
-Power is the rate at which energy is used or produced.
-
-The relationship between power (P), energy (E), and time (t) is given by the equation:
-
-E=P×t, where E is energy in joules, P is power in watts, and t is time in seconds.
-
-- ***Voltage, Current, and Resistance*** (in electrical context):
-
-In electrical systems, power (P) can be calculated using the formula:
-
-P=I×V, where I is the current in amperes and V is the voltage in volts,
-
-according to Ohm's Law (V=I×R, where R is resistance).
-
-- its related to energy, voltage, current and resistance in various contexts.
-
--------------------------------
-
-# PF ave. (Instantaneous) - power factor
-
-**defination** - power factor is an expression of energy efficiency.
-
-- expressed as a percentage.
-
-- lower percentage, the less efficient power usage.
-
-- its a ration of working power
-
-**unit** -
-
- PF measured in **kilowatts(KW)**
-
-Instantaneous POWER unit - watt
-
-**Equation** -
-
-PF = KW / KVA
-
-Instantaneous Power Factor: = cos(θ)
+## Power Factor (PF ave. - Instantaneous)
+
+- **Definition**: Expression of energy efficiency
+- **Unit**: Measured in kilowatts (KW) for instantaneous power
+- **Equation**: PF = KW / KVA (Instantaneous Power Factor: cos(θ))
 
 ![Alt text](image.png)
 
-**Relation** -
+### Active Power
 
-### active power -
+- Also known as real power
+- Equation: p = VI * cos(θ)
 
-known as real power, is the product of the voltage, current and powerfctor in an AC circuit.
+### Reactive Power
 
-- equation -
+- Arises due to phase difference between voltage and current in an AC circuit
+- Equation: Q = VI * sin(θ)
 
-p = VI cos(θ)
+- lagging and leading power factor illustrated in the below image
 
-where,
-p = active power , v = voltage, I = current , cos(θ) is the power factor
+![Alt text](image-20.png)
 
-### Reactive power -
 
-- arises due to phase difference between voltage and current in an AC circuit.
+## Power Factor for R, Y, and B Phase
 
-- equation -
+1) PF for R Phase: PFr = cos(θr)
+2) PF for Y Phase: PFy = cos(θy)
+3) PF for B Phase: PFb = cos(θb)
 
-Q = VI sin (θ)
+Where:
 
-where,
-Q = reactive power , v = voltage, I = current , sin(θ) = sine of the phase angle.
+- R, PF Y, and PF B are the power factors for the R, Y, and B phases, respectively.
+- θ R, θ Y, and θ B are the phase angles between voltage and current waveforms for the R, Y, and B phases, respectively.
 
-- lagging and leading
+---
 
------![Alt text](image-20.png)
+## VA Total
 
-# POWER FACTOR  for R, Y and B phase
-
-- each phase has its power factor. however, these PFs are generally assumed to be the same for balanced systems. where the loads and impedances in each phase are equal.
-- the power factor for each phase is given by the cosine of the phase angle between the voltage and current waveforms in that phase.
-
-1) PF for R phase -
-
-        PFr = cos(θr)
-
-2) PF for Y phase -
-
-        PFy = cos(θy)
-
-3) PF for B phase -
-
-        PFb = cos(θb)
-
-where,
-
-- R,PF Y, and PF B are the power factors for the R, Y, and B phases, respectively.
-- θ R, θ Y and θ B are the phase angles between voltage and current waveforms for the R, Y, and B phases, respectively.
-
-# VA total
-
-VA - it is a vector sum of real power (measured in watts)
-**unit** - Volt-ampere (VA)
-**Symbol** - VA
-
-### Equation -
-
-S (Apparent power)= V (voltage) * I (current)
+- **Definition**: Vector sum of real power (measured in watts)
+- **Unit**: Volt-Ampere (VA)
+- **Symbol**: VA
+- **Equation**: S (Apparent power) = V (Voltage) * I (Current)
 
 **Note** - without power factor
 
@@ -229,11 +162,9 @@ p = |S| (magnitude od apparent power) *cos(θ) (phase angle between voltage and 
 **Reactive power (Q)** -
 
 - equation -
-
 Q = |S|  (magnitude of apparent power) * sin(θ)  (θ is the phase angle between voltage and current.)
----------
 
-# Wh (Watt-hour)
+## Watt-hour (Wh)
 
 - represents the amount of energy consumed or produced by a device with a power rating of one watt over a period of one hour.
 
@@ -286,119 +217,211 @@ relation between energy, power and current and time.
 
 Energy (in watt-hours) = power(in watts) *Time(in hours) = Voltage (in volts)* Current (in amperes) * Time (in hours).
 
-# VAh (Volt-Ampere-Hour)
+---
 
-## equation
+## VAh (Volt-Ampere-Hour)
 
-VA = Volts * Amperes
+- **Equation**: VA = Volts * Amperes
 
-![Alt text](image-13.png)
+![VAh Image](image-13.png)
 
-## Ah (Ampere-Hour)
+### Ampere-Hour (Ah)
 
-Ah = watt-hours / voltage
+- **Equation**: Ah = Watt-hours / Voltage
 
-## Relation -
+![Ampere-Hour Image](image-2.png)
 
-![Alt text](image-2.png)
+---
 
 # Load Hours -
 
-- To derive load hours -
+- To derive load hours, information about the power consumed by the load over a certain period is needed.
+- Load hours are often expressed in kilowatt-hours (KWh) or megawatt-hours (MWh)
 
-need information about the POWER consumed by the load over a certain period.
-
-- Load hours are often expressed in kilowatt-hours(KWh) or megawatt-hours(MWh)
-
-![Alt text][def]
+---
 
 # CO2
 
-- carbon intensity factor = CO2 emmission.
-
-CO2 Emission = Energy Consumption (KWh) * Carbon Intensity Factor (gCO2 / KWh)
-
-- to find carbon intensity factor -
-
+- **Carbon Intensity Factor**: CO2 emission
+- **Equation**: CO2 Emission = Energy Consumption (KWh) * Carbon Intensity Factor (gCO2 / KWh)
+- Carbon Intensity Factor calculation
 ![Alt text](image-4.png)
-
 ![Alt text](image-5.png)
 
-# Var (Volt-Ampere Reactive)
+---
+
+## Var (Volt-Ampere Reactive)
 
 Var is a unit of measurment of reactive power.
 
-## mathematical relation -
+- mathematical relation 
 
 ![Alt text](image-6.png)
 
-## Derive
-
-- equation
+- Derive
 
 ![Alt text](image-7.png)
 
 ![Alt text](image-8.png)
 
 - to find a single phase of VA.
+
 ![Alt text](image-9.png)
 
 ---
+
 ![Alt text](image-10.png)
+
+---
 
 ## Var Total
 
-- sum of the reactive powers of individual phases (var R , var Y , var B).
+- Sum of the reactive powers of individual phases (var R, var Y, var B)
+- Reactive power is a vector quantity and is determined by the phasor sum of the reactive powers of the individual phases in a three-phase system
 
-- Reactive power is a vector quantity and when dealing with a three-phase system, is determined by the phasor sum of the reactive powers of the individual phases.
+![Var Total Image](image-11.png)
 
-![Alt text](image-11.png)
+---
 
-# KVARh inductive
+## KVARh (Kilovolt-Ampere Reactive-Hour)
 
-- ### kilovolt-Ampere Reactive-Hour is a unit of measurment for reactive power consumption or production in an electrical system
+- Unit of measurement for reactive power consumption or production in an electrical system
 
-- ### reactive power is required to establish and maintain the magnetic fields in inductive devices such as motors and transformers
+- reactive power is required to establish and maintain the magnetic fields in inductive devices such as motors and transformers
 
 ![Alt text](image-15.png)
 
-## relations
+## Relations
 
-1) Reactive power -
+1) Reactive power
 
 ![Alt text](image-18.png)
 
 sin(θ) - [the sine of the power factor angle.]
 
-2) Apparent power -
+2) Apparent power
 
 ![Alt text](image-16.png)
 
-3) power factor -
+3) power factor
 
 ![Alt text](image-17.png)
 
-4) Real power -
+4) Real power
 
 ![Alt text](image-19.png)
 
-# KVARH inductive
+---
 
-## defination -
+## KVARH Inductive
 
-Measures the cumulative reactive power in an electrical system due to inductive loads like motors and transformers.
+- **Definition**: Measures the cumulative reactive power in an electrical system due to inductive loads like motors and transformers
+- Causes a lagging power factor, where the current lags behind the voltage
 
-- it cause a lagging power factor. where the current lags behind the voltage.
+![KVARH Inductive Image](image-21.png)
 
-![Alt text](image-21.png)
+---
 
-# KVARH capacitive
+## KVARH Capacitive
 
-## defination -
+- **Definition**: Measures the cumulative reactive power in an electrical system due to capacitive loads
+- Capacitive loads cause a leading power factor, where the current leads the voltage
 
-Measures the cumulative reactive power in an electrical system due to capacitive loads.
+![KVARH Capacitive Image](image-22.png)
 
-- capacitive loads cause a leading power factor, where the current leads the voltage.
+---
 
-![Alt text](image-22.png)
+## V_LL and V_LN(PH) - Average
 
+![Voltage Images](image-23.png)
+
+### V_PH
+
+![V_PH Image](image-24.png)
+
+- VLL represents the voltage between any two line conductors in a three-phase system. It's the effective or RMS value of the voltage waveform.
+- Root of 3 helps convert the line-to-line voltage in a balanced system.
+- Vln - Line to neutral voltage
+- Geometry of a balanced three-phase system
+- Phases in such a system are 120 degrees apart from each other
+
+## V RY - YB - BR phases
+
+it is relation with V_LL AND V_PH.
+
+for references
+
+![Alt text](image-25.png)
+
+---
+
+## Frequency
+
+- **Definition**: The number of cycles of a periodic waveform that occur in one second
+- **Unit**: Hertz (Hz) - 1 Hz is equivalent to one cycle per second
+- **Equation**: f = 1 / T, where T is the period of the waveform
+
+![Alt text](image-26.png)
+
+where
+T is the period of the waveform
+
+## Period (T)
+
+## defination 
+
+- The time taken to complete one cycle of a periodic waveform.
+
+## Equation 
+
+![Alt text](image-27.png)
+
+---
+
+## VARH Inductive and Capacitive Loads
+
+- **Definition**: Reactive energy is the integral of reactive power with respect to time, representing the total reactive power supplied or absorbed by a system over a specific period
+
+- equation
+
+![Alt text](image-28.png)
+
+### Inductive Reactive Power (Ql)
+
+- QL = V * I * SIN(θ)
+- In inductive components (like a motor or transformer), the current lags behind the voltage, resulting in a positive phase angle (θ > 0).
+
+### Capacitive Reactive Power (Qc)
+
+- Qc = V * I * SIN(θ)
+- In capacitive components (like a capacitor), the current leads the voltage, resulting in a negative phase angle (θ < 0).
+
+---
+
+## KW Demand
+
+- **Definition**: Kilowatt demand refers to the rate at which electrical power is drawn from the grid or supplied to a system at any given moment, typically measured in kilowatts (kW)
+- **Equation**: KW = Pmax / Power Factor
+
+![KW Demand Image](image-29.png)
+
+---
+
+### Description of Demand
+
+![Alt text](image-30.png)
+
+---
+
+## KVA Demand
+
+- **Definition**: KVA demand refers to the rate at which apparent power is drawn from the electrical system over a specific period, representing the maximum instantaneous value of apparent power during that period
+- **Equation**: KVA = Smax
+
+![KVA Demand Image](image-31.png)
+
+---
+
+### Significance
+
+- KVA demand is crucial for sizing electrical equipment, such as transformers and generators, as it helps determine the capacity required to meet the peak power demand.

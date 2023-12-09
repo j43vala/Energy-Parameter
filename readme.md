@@ -34,8 +34,7 @@ The Energy Meter System (ENMS) is a comprehensive solution for monitoring and ma
 ## Power (w)
 
 - **Equation**: p = VI (Product of voltage and current)
-- **Unit**: Watts 
----
+- **Unit**: Watts
 
 ### Apparent Power (S)
 
@@ -173,7 +172,15 @@ Q = |S|  (magnitude of apparent power) * sin(θ)  (θ is the phase angle between
 
 **Equation**-
 
-Energy (Wh) = Power (W) * Time (h)
+Energy (Wh) = Avtive Power (kW) * Time (h)
+
+**Calculate Energy for Each Phase**-
+
+![Alt text](image-32.png)
+
+**Summation (Total Energy)**-
+
+![Alt text](image-33.png)
 
 **Defination** -
 
@@ -407,6 +414,7 @@ T is the period of the waveform
 - **Equation**: KW = Pmax / Power Factor
 
 ![KW Demand Image](image-29.png)
+
 
 ---
 

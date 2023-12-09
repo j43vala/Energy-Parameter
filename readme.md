@@ -18,6 +18,7 @@ The Energy Meter System (ENMS) is a comprehensive solution for monitoring and ma
 
 ### Resistance (R)
 
+
 - **Definition**: Opposition to the flow of electric current
 - **Unit**: Ohm
 - **Equation**: R = Voltage / I (current)

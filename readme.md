@@ -507,3 +507,25 @@ T is the period of the waveform
 ## Reactive Energy
 
 ![Alt text](image-34.png)
+
+---
+
+## To find KWH
+
+![Alt text](image-39.png)
+
+### where,
+
+- KW = watts / 1000
+
+### According to elmeasure energy meter
+
+        kWh received – R Phase
+        kWh received – Y Phase
+        kWh received – B Phase
+        kWh Delivered – R Phase
+        kWh Delivered – V Phase
+        kWh Delivered – B Phase
+
+![Alt text](image-40.png)
+

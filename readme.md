@@ -429,6 +429,48 @@ T is the period of the waveform
 
 ![KVA Demand Image](image-31.png)
 
+## To find KVA
+
+![Alt text](image-36.png)
+
+- **p** = WATTS
+- **Q** = VAR
+
+### FOR EXAMPLE
+
+![Alt text](image-37.png)
+
+## FOR total KVA R-Y-B phase
+
+- First find individual VAR using above equation for each phase then use below one for total.
+
+![Alt text](image-38.png)
+
+- same as use for below parameter.
+
+        kVA demand
+        kVAR demand
+        kVA maximum demand
+        kVAR maximum demand
+        kVAh received – R Phase
+        kVAh received – Y phase  
+        kVAh received – B phase
+        kVArh inductive received – R phase
+        kVArh inductive received –Y phase
+        kVArh inductive received – B phase
+        kVArh capacitive received – R phases
+        kVArh capacitive received – Y phases
+        kVArh capacitive received – B phases
+        kVAh Delivered – R phases
+        kVAh Delivered – Y phases
+        kVAh Delivered – B phases
+        kVArh inductive Delivered – R phases
+        kVArh inductive Delivered – Y phases
+        kVArh inductive Delivered – B phases
+        kVArh capacitive Delivered – R phases
+        kVArh capacitive Delivered – Y phases
+        kVArh capacitive Delivered – B phases
+
 ---
 
 ### Significance

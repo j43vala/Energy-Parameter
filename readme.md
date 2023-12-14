@@ -18,7 +18,6 @@ The Energy Meter System (ENMS) is a comprehensive solution for monitoring and ma
 
 ### Resistance (R)
 
-
 - **Definition**: Opposition to the flow of electric current
 - **Unit**: Ohm
 - **Equation**: R = Voltage / I (current)
@@ -123,7 +122,6 @@ Equation: P = I × V (where I is the current in amperes and V is the voltage in 
 - lagging and leading power factor illustrated in the below image
 
 ![Alt text](image-20.png)
-
 
 ## Power Factor for R, Y, and B Phase
 
@@ -241,7 +239,7 @@ Energy (in watt-hours) = power(in watts) *Time(in hours) = Voltage (in volts)* C
 
 ---
 
-# Load Hours -
+# Load hours
 
 - To derive load hours, information about the power consumed by the load over a certain period is needed.
 - Load hours are often expressed in kilowatt-hours (KWh) or megawatt-hours (MWh)
@@ -264,7 +262,7 @@ Energy (in watt-hours) = power(in watts) *Time(in hours) = Voltage (in volts)* C
 
 Var is a unit of measurment of reactive power.
 
-- mathematical relation 
+- mathematical relation
 
 ![Alt text](image-6.png)
 
@@ -373,16 +371,17 @@ for references
 
 ![Alt text](image-26.png)
 
-where
+where,
+
 T is the period of the waveform
 
 ## Period (T)
 
-## defination 
+## defination
 
 - The time taken to complete one cycle of a periodic waveform.
 
-## Equation 
+## Equation
 
 ![Alt text](image-27.png)
 
@@ -415,7 +414,6 @@ T is the period of the waveform
 
 ![KW Demand Image](image-29.png)
 
-
 ---
 
 ### Description of Demand
@@ -436,3 +434,34 @@ T is the period of the waveform
 ### Significance
 
 - KVA demand is crucial for sizing electrical equipment, such as transformers and generators, as it helps determine the capacity required to meet the peak power demand.
+
+---
+
+## Energy Consumption (KWH)
+
+### According to Elmeasure
+
+## received energy
+
+- "kWh received – R Phase," "kWh received – Y Phase," and "kWh received – B Phase"
+
+## delivered energy
+
+- "kWh Delivered – R Phase," "kWh Delivered – Y Phase," and "kWh Delivered – B Phase"
+
+## Eqution -
+
+![Alt text](image-35.png)
+
+---
+
+## Active Energy (KWH)
+
+- **Unit**: kilowatt-hours (kWh)
+- **Formula**: Active Energy (kWh) = Power (kW) × Time (hours)
+
+---
+
+## Reactive Energy
+
+![Alt text](image-34.png)

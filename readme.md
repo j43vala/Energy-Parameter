@@ -547,8 +547,6 @@ T is the period of the waveform
 
 ### Cost Calculation
 
-## For elmeasure
-
         cost = (Kwh received - r phase) +
                (Kwh received - y phase) +
                (Kwh received - b phase) * (cost per Kwh (unit price))

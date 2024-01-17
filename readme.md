@@ -471,6 +471,22 @@ T is the period of the waveform
         kVArh capacitive Delivered – Y phases
         kVArh capacitive Delivered – B phases
 
+## DEMAND -
+
+![Alt text](image-43.png)
+
+## RECEIVED -
+
+![Alt text](image-44.png)
+
+## Total KVArh - for received
+
+![Alt text](image-41.png)
+
+## Total KVArh - for delievered
+
+![Alt text](image-42.png)
+
 ---
 
 ### Significance
@@ -529,3 +545,10 @@ T is the period of the waveform
 
 ![Alt text](image-40.png)
 
+### Cost Calculation
+
+## For elmeasure
+
+        cost = (Kwh received - r phase) +
+               (Kwh received - y phase) +
+               (Kwh received - b phase) * (cost per Kwh (unit price))
